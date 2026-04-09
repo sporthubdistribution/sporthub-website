@@ -3,92 +3,119 @@
 <head>
   <title>SportHub Distribution</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #0b0f1a;
-    color: white;
-  }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0b0f1a;
+      color: white;
+    }
 
-  header {
-    background: linear-gradient(135deg, #0a2a66, #1e4ed8);
-    padding: 40px 20px;
-    text-align: center;
-  }
+    header {
+      background: linear-gradient(135deg, #0a2a66, #1e4ed8);
+      padding: 20px;
+      text-align: center;
+    }
 
-  header h1 {
-    margin: 0;
-    font-size: 32px;
-  }
+    header img {
+      width: 180px;
+      margin: 10px 0;
+    }
 
-  header p {
-    margin-top: 10px;
-    font-size: 16px;
-    opacity: 0.9;
-  }
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
 
-  .container {
-    max-width: 900px;
-    margin: -30px auto 20px;
-    background: white;
-    color: black;
-    padding: 25px;
-    border-radius: 12px;
-  }
+    .menu-bar {
+      background: #0a2a66;
+      padding: 10px;
+      text-align: left;
+    }
 
-  h2 {
-    color: #0a2a66;
-  }
+    .menu-btn {
+      font-size: 22px;
+      color: white;
+      cursor: pointer;
+    }
 
-  .btn {
-    display: inline-block;
-    background: #25D366;
-    color: white;
-    padding: 12px 18px;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-  }
+    .nav-links {
+      display: none;
+      background: #0a2a66;
+      text-align: center;
+    }
 
-  .btn:hover {
-    opacity: 0.9;
-  }
+    .nav-links a {
+      display: block;
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
 
-  .section {
-    margin-bottom: 25px;
-  }
-</style>
-.menu-btn {
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  display: block;
-}
+    .nav-links a:hover {
+      background: #1e4ed8;
+    }
 
-.nav-links {
-  display: none;
-  background: #0a2a66;
-  text-align: center;
-}
+    .container {
+      max-width: 900px;
+      margin: -20px auto 20px;
+      background: white;
+      color: black;
+      padding: 25px;
+      border-radius: 12px;
+    }
 
-.nav-links a {
-  display: block;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-}
+    h2 {
+      color: #0a2a66;
+    }
 
-.nav-links a:hover {
-  background: #1e4ed8;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .card {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 12px 18px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div style="background:#0a2a66; padding:10px;">
+<div class="menu-bar">
   <span class="menu-btn" onclick="toggleMenu()">☰ Menu</span>
 </div>
 
@@ -100,68 +127,81 @@
   <a href="#bags">Bags</a>
   <a href="#contact">Contact</a>
 </div>
-  <img src="logo.png" alt="SportHub Distribution Logo" style="width:280px; margin-bottom:10px;">
-  
+
+<header>
+  <img src="logo.png" alt="SportHub Distribution Logo">
   <p>Quality Cricket Equipment for Schools, Clubs & Players</p>
-<div style="text-align:center; margin-top: 15px;">
+
   <a class="btn" href="https://wa.me/27602025557" target="_blank">
     Get a Quote on WhatsApp
   </a>
-</div>
 </header>
 
 <div class="container">
-<h2>Featured Equipment</h2>
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+  <h2>Featured Equipment</h2>
 
-  <div style="background:#f5f5f5; padding:15px; border-radius:10px;">
-    <h3>🏏 Boundary Ropes</h3>
-    <p>Durable ropes for match and training use.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>🏏 Boundary Ropes</h3>
+      <p>Durable ropes for match and training use.</p>
+    </div>
+
+    <div class="card">
+      <h3>💡 LED Stumps</h3>
+      <p>Professional match-style LED wicket sets.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Training Equipment</h3>
+      <p>Cones, nets, and coaching tools.</p>
+    </div>
+
+    <div class="card">
+      <h3>📦 Cricket Kits</h3>
+      <p>Complete kits for schools, clubs, and players.</p>
+    </div>
   </div>
 
-  <div style="background:#f5f5f5; padding:15px; border-radius:10px;">
-    <h3>💡 LED Stumps</h3>
-    <p>Professional match-style LED wicket sets.</p>
-  </div>
+  <h2 id="bats">Cricket Bats</h2>
+  <p>High-quality bats for all levels of play.</p>
 
-  <div style="background:#f5f5f5; padding:15px; border-radius:10px;">
-    <h3>🎯 Training Equipment</h3>
-    <p>Cones, nets, and coaching tools.</p>
-  </div>
+  <h2 id="pads">Batting Pads</h2>
+  <p>Comfortable and durable pads for training and matches.</p>
 
-  <div style="background:#f5f5f5; padding:15px; border-radius:10px;">
-    <h3>📦 Cricket Kits</h3>
-    <p>Complete kits for schools, clubs, and players.</p>
-  </div>
+  <h2 id="gloves">Batting Gloves</h2>
+  <p>Grip, comfort and protection for every player.</p>
+
+  <h2 id="bags">Cricket Bags</h2>
+  <p>Spacious and durable bags for all your equipment.</p>
+
+  <h2>Why Customers Trust Us</h2>
+  <p>✔ Reliable sourcing from trusted suppliers</p>
+  <p>✔ Competitive pricing for bulk and individual orders</p>
+  <p>✔ Fast response and personal service</p>
+
+  <h2>Who We Work With</h2>
+  <p>🏫 Schools</p>
+  <p>🏏 Clubs</p>
+  <p>🧍 Individual players</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Email: info@sporthubdistribution.co.za</p>
+
+  <a class="btn" href="https://wa.me/27602025557" target="_blank">
+    Chat on WhatsApp
+  </a>
+
+  <a class="btn" href="mailto:info@sporthubdistribution.co.za">
+    Request a Quote
+  </a>
 
 </div>
-  
-<h2>Why Customers Trust Us</h2>
-<p>✔ Reliable sourcing from trusted suppliers</p>
-<p>✔ Competitive pricing for bulk and individual orders</p>
-<p>✔ Fast response and personal service</p>
-<p>✔ Equipment suitable for training and match conditions</p>
 
-<h2>Who We Work With</h2>
-<p>🏫 Schools and sports departments</p>
-<p>🏏 Cricket clubs and academies</p>
-<p>🧍 Individual players and parents</p>
-  
-<h2>Contact</h2>
-<p>Email: info@sporthubdistribution.co.za</p>
-<a class="btn" href="https://wa.me/27602025557" target="_blank">
-  Chat with us on WhatsApp
-</a>
-
-<a class="btn" href="mailto:info@sporthubdistribution.co.za">Get a Quote or Product Info</a>
-
-</div>
-
-<a href="https://wa.me/27602025557" target="_blank" 
-style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50%; text-decoration:none; font-size:20px;">
+<a href="https://wa.me/27602025557" target="_blank" class="floating-btn">
   💬
 </a>
+
 <script>
 function toggleMenu() {
   var menu = document.getElementById("menu");
@@ -172,5 +212,6 @@ function toggleMenu() {
   }
 }
 </script>
+
 </body>
 </html>
