@@ -19,25 +19,26 @@
     }
 
     header img {
-      width: 180px;
-      margin: 10px 0;
+      width: 160px;
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 28px;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 16px;
+      font-size: 15px;
       opacity: 0.9;
     }
 
     .menu-bar {
       background: #0a2a66;
       padding: 10px;
-      text-align: left;
     }
 
     .menu-btn {
       font-size: 22px;
-      color: white;
       cursor: pointer;
     }
 
@@ -49,8 +50,8 @@
 
     .nav-links a {
       display: block;
-      color: white;
       padding: 12px;
+      color: white;
       text-decoration: none;
       border-top: 1px solid rgba(255,255,255,0.1);
     }
@@ -60,7 +61,7 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: -20px auto 20px;
       background: white;
       color: black;
@@ -70,6 +71,7 @@
 
     h2 {
       color: #0a2a66;
+      margin-top: 30px;
     }
 
     .grid {
@@ -82,6 +84,11 @@
       background: #f5f5f5;
       padding: 15px;
       border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
     }
 
     .btn {
@@ -95,8 +102,12 @@
       font-weight: bold;
     }
 
-    .btn:hover {
-      opacity: 0.9;
+    .btn.secondary {
+      background: #0a2a66;
+    }
+
+    .section {
+      margin-top: 20px;
     }
 
     .floating-btn {
@@ -121,16 +132,16 @@
 
 <div id="menu" class="nav-links">
   <a href="#">Home</a>
-  <a href="#bats">Bats</a>
-  <a href="#pads">Pads</a>
-  <a href="#gloves">Gloves</a>
-  <a href="#bags">Bags</a>
+  <a href="#categories">Shop</a>
+  <a href="#featured">Featured</a>
+  <a href="#trust">Why Us</a>
   <a href="#contact">Contact</a>
 </div>
 
 <header>
-  <img src="logo.png" alt="SportHub Distribution Logo">
-  <p>Quality Cricket Equipment for Schools, Clubs & Players</p>
+  <img src="logo.png">
+  <h1>SportHub Distribution</h1>
+  <p>Premium Cricket Equipment for Schools, Clubs & Players</p>
 
   <a class="btn" href="https://wa.me/27602025557" target="_blank">
     Get a Quote on WhatsApp
@@ -139,60 +150,71 @@
 
 <div class="container">
 
-  <h2>Featured Equipment</h2>
+  <!-- CATEGORIES -->
+  <h2 id="categories">Shop by Category</h2>
+
+  <div class="grid">
+    <div class="card"><h3>🏏 Cricket Bats</h3><p>Match & training bats for all levels.</p></div>
+    <div class="card"><h3>🦵 Batting Pads</h3><p>Comfortable protection for every player.</p></div>
+    <div class="card"><h3>🧤 Batting Gloves</h3><p>Grip, comfort and durability.</p></div>
+    <div class="card"><h3>🎒 Cricket Bags</h3><p>Carry all your gear with ease.</p></div>
+  </div>
+
+  <!-- FEATURED -->
+  <h2 id="featured">Featured Equipment</h2>
 
   <div class="grid">
     <div class="card">
-      <h3>🏏 Boundary Ropes</h3>
+      <h3>Boundary Ropes</h3>
       <p>Durable ropes for match and training use.</p>
+      <a class="btn" href="https://wa.me/27602025557">Enquire</a>
     </div>
 
     <div class="card">
-      <h3>💡 LED Stumps</h3>
-      <p>Professional match-style LED wicket sets.</p>
+      <h3>LED Stumps</h3>
+      <p>Professional match-style wicket sets.</p>
+      <a class="btn" href="https://wa.me/27602025557">Enquire</a>
     </div>
 
     <div class="card">
-      <h3>🎯 Training Equipment</h3>
-      <p>Cones, nets, and coaching tools.</p>
+      <h3>Training Equipment</h3>
+      <p>Cones, nets and coaching tools.</p>
+      <a class="btn" href="https://wa.me/27602025557">Enquire</a>
     </div>
 
     <div class="card">
-      <h3>📦 Cricket Kits</h3>
-      <p>Complete kits for schools, clubs, and players.</p>
+      <h3>Cricket Kits</h3>
+      <p>Complete kits for schools & players.</p>
+      <a class="btn" href="https://wa.me/27602025557">Enquire</a>
     </div>
   </div>
 
-  <h2 id="bats">Cricket Bats</h2>
-  <p>High-quality bats for all levels of play.</p>
+  <!-- TRUST -->
+  <h2 id="trust">Why Customers Trust Us</h2>
+  <div class="section">
+    <p>✔ Reliable sourcing from trusted suppliers</p>
+    <p>✔ Competitive pricing for bulk & individual orders</p>
+    <p>✔ Fast response and personal service</p>
+    <p>✔ Quality equipment for training & match conditions</p>
+  </div>
 
-  <h2 id="pads">Batting Pads</h2>
-  <p>Comfortable and durable pads for training and matches.</p>
+  <!-- WHO -->
+  <h2>Who We Serve</h2>
+  <div class="section">
+    <p>🏫 Schools & sports departments</p>
+    <p>🏏 Cricket clubs & academies</p>
+    <p>🧍 Individual players & parents</p>
+  </div>
 
-  <h2 id="gloves">Batting Gloves</h2>
-  <p>Grip, comfort and protection for every player.</p>
-
-  <h2 id="bags">Cricket Bags</h2>
-  <p>Spacious and durable bags for all your equipment.</p>
-
-  <h2>Why Customers Trust Us</h2>
-  <p>✔ Reliable sourcing from trusted suppliers</p>
-  <p>✔ Competitive pricing for bulk and individual orders</p>
-  <p>✔ Fast response and personal service</p>
-
-  <h2>Who We Work With</h2>
-  <p>🏫 Schools</p>
-  <p>🏏 Clubs</p>
-  <p>🧍 Individual players</p>
-
-  <h2 id="contact">Contact</h2>
+  <!-- CTA -->
+  <h2 id="contact">Get in Touch</h2>
   <p>Email: info@sporthubdistribution.co.za</p>
 
   <a class="btn" href="https://wa.me/27602025557" target="_blank">
     Chat on WhatsApp
   </a>
 
-  <a class="btn" href="mailto:info@sporthubdistribution.co.za">
+  <a class="btn secondary" href="mailto:info@sporthubdistribution.co.za">
     Request a Quote
   </a>
 
@@ -205,11 +227,7 @@
 <script>
 function toggleMenu() {
   var menu = document.getElementById("menu");
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
 }
 </script>
 
