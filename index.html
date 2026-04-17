@@ -22,11 +22,6 @@
       width: 160px;
     }
 
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 28px;
-    }
-
     header p {
       font-size: 15px;
       opacity: 0.9;
@@ -71,31 +66,49 @@
 
     h2 {
       color: #0a2a66;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 15px;
+      gap: 20px;
     }
 
     .card {
       background: #f5f5f5;
       padding: 15px;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: 0.2s;
     }
 
     .card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-5px);
+    }
+
+    .card img.main-img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .thumbs {
+      display: flex;
+      gap: 5px;
+      margin-top: 8px;
+    }
+
+    .thumbs img {
+      width: 30%;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
     .btn {
       display: inline-block;
       background: #25D366;
       color: white;
-      padding: 12px 18px;
+      padding: 10px 15px;
       margin-top: 10px;
       text-decoration: none;
       border-radius: 6px;
@@ -104,10 +117,6 @@
 
     .btn.secondary {
       background: #0a2a66;
-    }
-
-    .section {
-      margin-top: 20px;
     }
 
     .floating-btn {
@@ -132,9 +141,10 @@
 
 <div id="menu" class="nav-links">
   <a href="#">Home</a>
-  <a href="#categories">Shop</a>
-  <a href="#featured">Featured</a>
-  <a href="#trust">Why Us</a>
+  <a href="#bats">Bats</a>
+  <a href="#pads">Pads</a>
+  <a href="#gloves">Gloves</a>
+  <a href="#bags">Bags</a>
   <a href="#contact">Contact</a>
 </div>
 
@@ -149,84 +159,122 @@
 
 <div class="container">
 
-  <!-- CATEGORIES -->
-  <h2 id="categories">Shop by Category</h2>
+<!-- BATS -->
+<h2 id="bats">Cricket Bats</h2>
+<div class="grid">
 
-  <div class="grid">
-    <div class="card"><h3>🏏 Cricket Bats</h3><p>Match & training bats for all levels.</p></div>
-    <div class="card"><h3>🦵 Batting Pads</h3><p>Comfortable protection for every player.</p></div>
-    <div class="card"><h3>🧤 Batting Gloves</h3><p>Grip, comfort and durability.</p></div>
-    <div class="card"><h3>🎒 Cricket Bags</h3><p>Carry all your gear with ease.</p></div>
-  </div>
+<div class="card">
+<img id="bat1" class="main-img" src="bat1-1.png">
+<div class="thumbs">
+<img src="bat1-1.png" onclick="changeImg('bat1', this.src)">
+<img src="bat1-2.png" onclick="changeImg('bat1', this.src)">
+<img src="bat1-3.png" onclick="changeImg('bat1', this.src)">
+</div>
+<h3>EM 360 Selected Willow Bat</h3>
+<p>Selected Willow</p>
+<p><strong>R1149 – R2499</strong></p>
+<a class="btn" href="https://wa.me/27602025557?text=EM%20360%20Bat">Enquire</a>
+</div>
 
-  <!-- FEATURED -->
-  <h2 id="featured">Featured Equipment</h2>
+<div class="card">
+<img id="bat2" class="main-img" src="bat2-1.png">
+<div class="thumbs">
+<img src="bat2-1.png" onclick="changeImg('bat2', this.src)">
+<img src="bat2-2.png" onclick="changeImg('bat2', this.src)">
+<img src="bat2-3.png" onclick="changeImg('bat2', this.src)">
+</div>
+<h3>EM AB 360 Bold Bat</h3>
+<p>Performance Willow</p>
+<p><strong>R2749 – R15499</strong></p>
+<a class="btn" href="https://wa.me/27602025557?text=AB%20360%20Bold%20Bat">Enquire</a>
+</div>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Boundary Ropes</h3>
-      <p>Durable ropes for match and training use.</p>
-      <a class="btn" href="https://wa.me/27602025557">Enquire</a>
-    </div>
+</div>
 
-    <div class="card">
-      <h3>LED Stumps</h3>
-      <p>Professional match-style wicket sets.</p>
-      <a class="btn" href="https://wa.me/27602025557">Enquire</a>
-    </div>
+<!-- PADS -->
+<h2 id="pads">Batting Pads</h2>
+<div class="grid">
 
-    <div class="card">
-      <h3>Training Equipment</h3>
-      <p>Cones, nets and coaching tools.</p>
-      <a class="btn" href="https://wa.me/27602025557">Enquire</a>
-    </div>
+<div class="card">
+<img id="pads1" class="main-img" src="pads1-1.png">
+<div class="thumbs">
+<img src="pads1-1.png" onclick="changeImg('pads1', this.src)">
+<img src="pads1-2.png" onclick="changeImg('pads1', this.src)">
+</div>
+<h3>AB 360 Bull Ring Pads</h3>
+<p><strong>R1649</strong></p>
+</div>
 
-    <div class="card">
-      <h3>Cricket Kits</h3>
-      <p>Complete kits for schools & players.</p>
-      <a class="btn" href="https://wa.me/27602025557">Enquire</a>
-    </div>
-  </div>
+<div class="card">
+<img id="pads2" class="main-img" src="pads2-1.png">
+<div class="thumbs">
+<img src="pads2-1.png" onclick="changeImg('pads2', this.src)">
+<img src="pads2-2.png" onclick="changeImg('pads2', this.src)">
+</div>
+<h3>AB 360 Bold Pads</h3>
+<p><strong>R949 – R999</strong></p>
+</div>
 
-  <!-- TRUST -->
-  <h2 id="trust">Why Customers Trust Us</h2>
-  <div class="section">
-    <p>✔ Reliable sourcing from trusted suppliers</p>
-    <p>✔ Competitive pricing for bulk & individual orders</p>
-    <p>✔ Fast response and personal service</p>
-    <p>✔ Quality equipment for training & match conditions</p>
-  </div>
+</div>
 
-  <!-- WHO -->
-  <h2>Who We Serve</h2>
-  <div class="section">
-    <p>🏫 Schools & sports departments</p>
-    <p>🏏 Cricket clubs & academies</p>
-    <p>🧍 Individual players & parents</p>
-  </div>
+<!-- GLOVES -->
+<h2 id="gloves">Batting Gloves</h2>
+<div class="grid">
 
-  <!-- CTA -->
-  <h2 id="contact">Get in Touch</h2>
-  <p>Email: info@sporthubdistribution.co.za</p>
+<div class="card">
+<img id="gloves1" class="main-img" src="gloves1-1.png">
+<div class="thumbs">
+<img src="gloves1-1.png" onclick="changeImg('gloves1', this.src)">
+<img src="gloves1-2.png" onclick="changeImg('gloves1', this.src)">
+</div>
+<h3>AB 360 Number 17 Gloves</h3>
+<p><strong>R1699</strong></p>
+</div>
 
-  <a class="btn" href="https://wa.me/27602025557" target="_blank">
-    Chat on WhatsApp
-  </a>
+</div>
 
-  <a class="btn secondary" href="mailto:info@sporthubdistribution.co.za">
-    Request a Quote
-  </a>
+<!-- BAGS -->
+<h2 id="bags">Cricket Bags</h2>
+<div class="grid">
+
+<div class="card">
+<img id="bag1" class="main-img" src="bag1-1.png">
+<div class="thumbs">
+<img src="bag1-1.png" onclick="changeImg('bag1', this.src)">
+<img src="bag1-2.png" onclick="changeImg('bag1', this.src)">
+</div>
+<h3>MRF Duffle Bag</h3>
+<p><strong>R949</strong></p>
+</div>
+
+</div>
+
+<!-- CONTACT -->
+<h2 id="contact">Get in Touch</h2>
+<p>Email: info@sporthubdistribution.co.za</p>
+
+<a class="btn" href="https://wa.me/27602025557" target="_blank">
+Chat on WhatsApp
+</a>
+
+<a class="btn secondary" href="mailto:info@sporthubdistribution.co.za">
+Request a Quote
+</a>
 
 </div>
 
 <a href="https://wa.me/27602025557" target="_blank" class="floating-btn">
-  💬
+💬
 </a>
 
 <script>
 function toggleMenu() {
   var menu = document.getElementById("menu");
   menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+function changeImg(id, src) {
+  document.getElementById(id).src = src;
 }
 </script>
 
