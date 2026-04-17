@@ -128,9 +128,9 @@
   <a href="#bats">Bats</a>
   <a href="#pads">Pads</a>
   <a href="#gloves">Gloves</a>
-  <a href="#bags">Bags</a>
   <a href="#helmets">Helmets</a>
   <a href="#balls">Balls</a>
+  <a href="#equipment">Equipment</a>
 </div>
 
 <header>
@@ -193,20 +193,31 @@
 <div class="card">
 <img id="brp" class="main-img" src="brp1.png">
 <div class="thumbs">
-<img src="brp1.png">
-<img src="brp2.png">
-<img src="brp3.png">
+<img src="brp1.png" onclick="changeImg('brp', this.src)">
+<img src="brp2.png" onclick="changeImg('brp', this.src)">
+<img src="brp3.png" onclick="changeImg('brp', this.src)">
 </div>
 <h3>Bull Ring Pads</h3>
 <p><strong>R1649</strong></p>
 </div>
 
 <div class="card">
-<img id="playp" class="main-img" src="playp.png">
+<img id="boldp" class="main-img" src="boldp1.png">
 <div class="thumbs">
-<img src="playp1.png">
-<img src="playp2.png">
-<img src="playp3.png">
+<img src="boldp1.png" onclick="changeImg('boldp', this.src)">
+<img src="boldp2.png" onclick="changeImg('boldp', this.src)">
+<img src="boldp3.png" onclick="changeImg('boldp', this.src)">
+</div>
+<h3>Bold Pads</h3>
+<p><strong>R949 – R999</strong></p>
+</div>
+
+<div class="card">
+<img id="playp" class="main-img" src="playp1.png">
+<div class="thumbs">
+<img src="playp1.png" onclick="changeImg('playp', this.src)">
+<img src="playp2.png" onclick="changeImg('playp', this.src)">
+<img src="playp3.png" onclick="changeImg('playp', this.src)">
 </div>
 <h3>Playburst Pads</h3>
 <p><strong>R1249 – R1299</strong></p>
@@ -221,10 +232,10 @@
 <div class="card">
 <img id="n17g" class="main-img" src="n17g1.png">
 <div class="thumbs">
-<img src="n17g1.png">
-<img src="n17g2.png">
-<img src="n17g3.png">
-<img src="n17g4.png">
+<img src="n17g1.png" onclick="changeImg('n17g', this.src)">
+<img src="n17g2.png" onclick="changeImg('n17g', this.src)">
+<img src="n17g3.png" onclick="changeImg('n17g', this.src)">
+<img src="n17g4.png" onclick="changeImg('n17g', this.src)">
 </div>
 <h3>Number 17 Gloves</h3>
 <p><strong>R1699</strong></p>
@@ -233,10 +244,10 @@
 <div class="card">
 <img id="brg" class="main-img" src="brg1.png">
 <div class="thumbs">
-<img src="brg1.png">
-<img src="brg2.png">
-<img src="brg3.png">
-<img src="brg4.png">
+<img src="brg1.png" onclick="changeImg('brg', this.src)">
+<img src="brg2.png" onclick="changeImg('brg', this.src)">
+<img src="brg3.png" onclick="changeImg('brg', this.src)">
+<img src="brg4.png" onclick="changeImg('brg', this.src)">
 </div>
 <h3>Bull Ring Gloves</h3>
 <p><strong>R1499 – R1549</strong></p>
@@ -249,15 +260,14 @@
 <div class="grid">
 
 <div class="card">
-<img src="helmet1.png" class="main-img">
-<h3>DSC Avenger Helmet</h3>
-<p><strong>R899</strong></p>
+<img id="mash" class="main-img" src="mash1.png">
+<div class="thumbs">
+<img src="mash1.png" onclick="changeImg('mash', this.src)">
+<img src="mash2.png" onclick="changeImg('mash', this.src)">
+<img src="mash3.png" onclick="changeImg('mash', this.src)">
 </div>
-
-<div class="card">
-<img src="helmet2.png" class="main-img">
-<h3>NAS Junior Helmet</h3>
-<p><strong>R449</strong></p>
+<h3>Masuri Helmet</h3>
+<p><strong>R1695 – R1795</strong></p>
 </div>
 
 </div>
@@ -267,9 +277,46 @@
 <div class="grid">
 
 <div class="card">
-<img src="ball1.png" class="main-img">
+<img id="5star" class="main-img" src="5star1.png">
+<div class="thumbs">
+<img src="5star1.png" onclick="changeImg('5star', this.src)">
+<img src="5star2.png" onclick="changeImg('5star', this.src)">
+<img src="5star3.png" onclick="changeImg('5star', this.src)">
+<img src="5star4.png" onclick="changeImg('5star', this.src)">
+</div>
 <h3>NAS 5-Star Ball</h3>
 <p><strong>R279 – R1599</strong></p>
+</div>
+
+</div>
+
+<!-- EQUIPMENT -->
+<h2 id="equipment">Equipment</h2>
+<div class="grid">
+
+<div class="card">
+<img id="brope" class="main-img" src="brope.png">
+<div class="thumbs">
+<img src="brope.png" onclick="changeImg('rope', this.src)">
+</div>
+<h3>Boundary Rope</h3>
+<p style="color:red;"><strong>ON SALE</strong></p>
+<p><strong>R21999</strong></p>
+</div>
+
+<div class="card">
+<img id="nasroboarm" class="main-img" src="nasroboarm1.png">
+<div class="thumbs">
+<img src="nasroboarm1.png" onclick="changeImg('nasroboarm', this.src)">
+<img src="nasroboarm2.png" onclick="changeImg('nasroboarm', this.src)">
+<img src="nasroboarm3.png" onclick="changeImg('nasroboarm', this.src)">
+<img src="nasroboarm4.png" onclick="changeImg('nasroboarm', this.src)">
+<img src="nasroboarm5.png" onclick="changeImg('nasroboarm', this.src)">
+<img src="nasroboarm6.png" onclick="changeImg('nasroboarm', this.src)">
+<img src="nasroboarm7.png" onclick="changeImg('nasroboarm', this.src)">
+</div>
+<h3>RoboArm</h3>
+<p><strong>R619</strong></p>
 </div>
 
 </div>
