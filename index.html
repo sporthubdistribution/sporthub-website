@@ -1307,15 +1307,8 @@ The integrated LED lighting system flashes instantly when the wicket is broken, 
 </div>
 
 <!-- BOUNDARY ROPE -->
-<div class="card">
-<img id="brope" class="main-img" src="brope.png">
-
-<div class="thumbs">
-<img src="brope.png" onclick="changeImg('brope', this.src)">
-</div>
-
-<!-- BOUNDARY ROPE -->
 <div class="card" onclick="toggleDesc(this)">
+
 <img id="brope" class="main-img" src="brope.png">
 
 <div class="thumbs">
@@ -1368,11 +1361,12 @@ Highly visible and durable for match-day use and long-term outdoor conditions.
 
 </div>
 </div>
-  
-<div class="card" onclick="toggleDesc(this)">
-<img id="katc" class="main-img" src="katc1.png">
 
 <!-- KATCHET BOARD -->
+<div class="card" onclick="toggleDesc(this)">
+
+<img id="katc" class="main-img" src="katc1.png">
+
 <div class="thumbs">
 <img src="katc1.png" onclick="changeImg('katc', this.src)">
 </div>
@@ -1423,7 +1417,7 @@ training aid designed to improve reflexes, reaction speed, catching and hand-eye
 </div>
 
 <!-- NAS ROBOARM -->
-<div class="card">
+<div class="card" onclick="toggleDesc(this)">
 
 <img id="nasroboarm" class="main-img" src="nasroboarm1.png">
 
@@ -1445,7 +1439,7 @@ training aid designed to improve reflexes, reaction speed, catching and hand-eye
 Enquire
 </a>
 
-<button class="btn" onclick="toggleDesc(this.parentElement)">
+<button class="btn" onclick="event.stopPropagation(); toggleDesc(this.parentElement)">
 View Details
 </button>
 
